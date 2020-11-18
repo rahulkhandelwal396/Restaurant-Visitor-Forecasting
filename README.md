@@ -29,5 +29,13 @@ As we can see here, generally, higher number of people visit retaurants on holid
 
 <img src="restaurant_visitor_spikes.png" alt="Data"/>
 
+### ETS decomposition
+
+<img src="ets_decomposition.png" alt="Data"/>
+
+### ADF Test
+
+<img src="ets_decomposition.png" alt="Data"/>
+
 
  
