@@ -35,7 +35,11 @@ As we can see here, generally, higher number of people visit retaurants on holid
 
 ### ADF Test
 
-<img src="ets_decomposition.png" alt="Data"/>
+<img src="ADF test.png" alt="Data"/>
+
+### Running auto_arima
+
+<img src="SARIMA.png" alt="Data"/>
 
 
  
