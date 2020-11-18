@@ -21,53 +21,53 @@ The data contains an exogenous variable: holiday, which we use to get additional
  <li>Retraining with SARIMAX model and forecasting into the future.</li>
 </ol>
 
-### Plotting the data
+### 1. Plotting the data
 
 The light gray lines mark occurrence of holidays.
 As we can see here, generally, higher number of people visit retaurants on holidays.
 
 <img src="restaurant_visitor_spikes.png" alt="Data"/>
 
-### ETS decomposition
+### 2. ETS decomposition
 
 <img src="ets_decomposition.png" alt="Data"/>
 
 We can see here that a significant amount of seasonality is present in the data.
 
-### ADF Test
+### 3. ADF Test
 
 <img src="ADF test.png" alt="Data" width="400" height="300"/>
 
 From the ADF test, we can conclude that the data is stationary.
 
-### Running auto_arima
+### 4. Running auto_arima
 
 <img src="SARIMA.png" alt="Data" width="400" height="300"/>
 
 This provides an ARIMA Order of (1,0,0) and a seasonal order of (2,0,0,7)
 
-### Splitting into training and testing sets
+### 5. Splitting into training and testing sets
 
 Total length of dataset is 478 rows.
 We'll assign 42 days (6 weeks) to the test set so that it includes several holidays.
 
 Therefore, len(train) = 436; len(test) = 42
 
-### Fitting SARIMA model and plotting predictions on test set
+### 6. Fitting SARIMA model and plotting predictions on test set
 
 <img src="sarima_plotting.png" alt="Data" />
 
-### Model evaluation 
+### 7. Model evaluation 
 
 SARIMA(1,0,0)(2,0,0,7) -> MSE Error: 1702.629477
 <br>
 SARIMA(1,0,0)(2,0,0,7) -> RMSE Error: 41.26293103
 
-### Adding holiday variable; training SARIMAX model and plotting predictions on test data
+### 8. Adding holiday variable; training SARIMAX model and plotting predictions on test data
 
 <img src="sarimax_plotting.png" alt="Data" />
 
-### Evaluating and comparing SARIMA model results with SARIMAX model results
+### 9. Evaluating and comparing SARIMA model results with SARIMAX model results
 
 SARIMA(1,0,0)(2,0,0,7) MSE Error: 1702.629477
 <br>
@@ -80,7 +80,7 @@ SARIMAX(1,0,0)(2,0,0,7) RMSE Error: 31.07362601
 
 As we can see, SARIMAX performed better than SARIMA model because of additional information about the holiday variable, which indicates spikes in the number of visitors in restaurants.
 
-### Retraining with SARIMAX model and forecasting into the future
+### 10. Retraining with SARIMAX model and forecasting into the future
 
 <img src="plotting_future.png" alt="Data" />
 
