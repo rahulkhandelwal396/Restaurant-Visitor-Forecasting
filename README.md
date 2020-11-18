@@ -32,6 +32,8 @@ As we can see here, generally, higher number of people visit retaurants on holid
 
 <img src="ets_decomposition.png" alt="Data"/>
 
+We can see here that a significant amount of seasonality is present in the data.
+
 ### ADF Test
 
 <img src="ADF test.png" alt="Data" width="400" height="300"/>
