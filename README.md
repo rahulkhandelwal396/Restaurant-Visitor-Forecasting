@@ -6,5 +6,12 @@ The dataset contains 478 days of restaurant data, plus an additional 39 days of 
 
 The data contains an exogenous variable: holiday, which we use to get additional information about the number of people visiting restaurants during particular seasons.
 
+# Plotting the data
+
+The light gray lines mark occurrence of holidays.
+As we can see here, generally, higher number of people visit retaurants on holidays.
+
+<img src="restaurant_visitor_spikes.png" alt="Data"/>
+
 
  
